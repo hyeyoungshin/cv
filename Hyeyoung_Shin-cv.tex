@@ -1,0 +1,261 @@
+%_______________________________________________
+% @brief    LaTeX2e Resume for Hyeyoung Shin
+\documentclass[margin,line]{resume}
+\usepackage{url}
+\usepackage[shortlabels]{enumitem}
+%\usepackage{enumitem}
+
+\usepackage{graphicx}
+
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{light-gray}{gray}{0.70}
+\definecolor{gray}{gray}{0.50}
+\definecolor{dark-gray}{gray}{0.30}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\hypersetup{
+     citecolor    = gray,
+     urlcolor=Blue
+     %% linkcolor=Emerald
+}
+
+
+\usepackage{ifthen}
+\usepackage[LabelsAligned]{currvita}     
+\begin{document}
+
+\newcommand{\Hawaii}{Hawai\kern.05em`\kern.05em\relax i}
+\newcommand{\Manoa}{M\=anoa}
+\name{{\Large Hyeyoung Shin} \hskip127mm {\large\sc Resum\'e}} %{\large\sc Curriculum Vit\ae}}
+
+\begin{resume}
+
+    %___________________________________________
+    % Contact Information
+    \section{\mysidestyle Contact\\Information}
+     65 Clarendon Street, Apt 6            \hfill tel: 212-535-8565\\
+     Boston, MA 02116                 \hfill url: \href{https://hyeyoungshin.github.io/}{www.hyeyoungshin.org}\\
+     USA  \hfill             \hfill email:  \href{mailto:hyeyoungshinw@gmail.com}{hyeyoungshinw@gmail.com}
+
+    %__________________________________________________________________________________
+    % Research Interests
+    \section{\mysidestyle Interests}
+
+    Programming languages, logic, type theory and functional programming.
+    
+    %________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+
+    \newcommand\mysmallskip{4pt}
+    \newcommand\mymedskip{6pt}
+    \newcommand\mybigskip{8pt}
+
+    \textbf{Northeastern University}. \textsl{Ph.D. Candidate in Computer Science.}\hfill 2017--present\\
+    Advisor: \href{http://www.ccs.neu.edu/home/amal/}{Professor Amal Ahmed}
+    \\[\mymedskip]
+    \textbf{University of \Hawaii, \Manoa}. \textsl{Graded courses and exams in mathematics.} \hfill 2016--2017\\  %\hfill Ames, IA\\
+    Graduate courses: logic, recursion theory; undergraduate course: topology. %% (non-degree)
+    \\[\mymedskip]
+    \textbf{Iowa State University}. \textsl{Graded courses and exams in mathe and computer science.} \hfill 2014--2016\\
+    Graduate: PL {\small (with Coq)}, computability; undergrad: abstract algebra, intro to proofs, calculus %% (non-degree)
+    \\[\mymedskip] 
+    \textbf{Kyeongpook National University}. \textsl{Bachelor of Arts, English Language \& Literature.} \hfill 2004--2009  %\hfill Daegu, South Korea\\
+    
+
+      
+
+%______________________________________________________________________________________
+\section{\mysidestyle Additional Training}
+
+\newcommand\ssitem[5]{\href{#1}{#2} \hfill #3 \\ Topics: #4 \hfill #5}
+
+\ssitem
+{https://summer-school.racket-lang.org/2017/}
+{The Racket School of Semantics and Languages}
+{University of Utah}
+{semantics and language design}
+{10 July--14 July 2017}\\[\mymedskip]
+\ssitem
+{https://www.cs.uoregon.edu/research/summerschool/summer17}
+{Oregon Programming Languages Summer School}
+{University of Oregon}
+{dependent, gradual, and substructural type systems}
+{26 June--8 July 2017}\\[\mymedskip]
+\ssitem
+{http://www.cs.bham.ac.uk/~pbl/mgs2016/}
+{Midlands Graduate School in Foundations of Computing Science}
+{University of Birmingham}
+{type theory, denotational semantics, category theory}
+{11--15 April 2016}\\[\mymedskip]
+\ssitem
+{https://www.cs.uoregon.edu/research/summerschool/summer16/}
+{Oregon Programming Languages Summer School}
+{University of Oregon}
+{type theory, logic, semantics, verification}
+{20 June--2 July 2016}\\[\mymedskip]
+\ssitem
+{https://www.coursera.org/learn/progfun1}
+{Functional Programming Principles in Scala}
+{\'{E}cole Polytechnique F\'{e}d\'{e}rale de Lausanne}
+{6-week online course with
+\href{https://www.coursera.org/account/accomplishments/records/SRLRBNFMFW86}
+     {verified certificate}}
+{Grade Achieved: 94\%}
+
+%_______________________________________________________________
+% Work Experience
+\section{\mysidestyle Professional\\Experience}
+\textbf{Iowa State University}.  \textsl{TA for {\small COMS} 228: Introduction to Data Structures} \hfill Fall 2015\\[\mysmallskip]
+%\textsc{coms} 228: Introduction to Data Structures \\[\mymedskip]
+\textbf{Gyeongsan Girls' High School}. \textsl{English Teacher}  \hfill 2009--2013
+
+    
+%%     %_______________________________________________________________    %         Volunteer work
+%%     \section{\mysidestyle Volunteer\\Work}
+
+%%     \textbf{InDaegu} \hfill 2011--2012\\
+%%     \textsl{Korean-English translator:} 
+%%     \href{http://www.in-daegu.com/}{InDaegu newspaper}.
+%% %    \href{http://www.in-daegu.com/}{(in-daegu.com)}. 
+    
+%%         \textbf{Daegu Pockets}  \hfill 2010--2011\\
+%%     \textsl{Korean-English translator:}
+%%     \href{http://daegupockets.com/}{Daegu Pockets magazine}.
+%% %    \href{http://daegupockets.com/}{(daegupockets.com).}
+    
+%%     \textbf{Daegu International Bodypainting Festival}  \hfill 2010\\
+%%     \textsl{Korean-English translator:} DIBF Association.
+    
+%%     \textbf{Daegu International Musical Festival}   \hfill 2009\\
+%%     \textsl{Korean-English translator:} DIMP Association.
+ 
+
+
+    %______________________________________________________________________________________
+    \section{\mysidestyle Programming Experience} 
+     
+    \textbf{Coq.} Graduate course in Programming Languages ({\small COMS} 541).\\
+    Textbook: {\it Software Foundations}, by Pierce, et al. \\[\mymedskip]
+    %
+    \textbf{Java.} Courses and exams in oop and data structures (noted above).\\
+    Served as TA for the undergraduate data structures course taught using Java.\\[\mymedskip]
+    %
+    \textbf{Racket.} Implemented an \href{https://github.com/hyeyoungshin/hy_eopl}{interpreter generator} parametrized by representations of environment and closure. (Textbook: {\it Essentials of Programming Languages}, by Friedman and Wand)\\[\mymedskip]
+    %
+    \textbf{Scala.} 6-week online course taught by Martin Odersky. Earned certificate (noted above) \\[\mymedskip]
+    %Contributed to the \emph{Universal Algebra Types Project}\\[\mymedskip] %%(TODO: add link)
+    %
+    \textbf{SML.} Implemented a compiler that compiles \href{https://www.cs.princeton.edu/~appel/modern/ml/}{Tiger language} to MIPS assembly.\\ 
+    (Textbook: {\it Modern Compiler Implementation in ML}, by Appel)
+    %
+    %%\textbf{Other.} Proficient in the following tools and languages: Git, \LaTeX, Redex
+
+    \section{\mysidestyle Awards} 
+    %% \begin{itemize}
+    %% \item Scholarship to attend
+    %%   \href{https://www.cs.uoregon.edu/research/summerschool/summer16/}{OPLSS},
+    %%   Oregon; 20 June--2 July, 2016.
+    %% \item Scholarship to attend
+    %%   \href{https://www.cis.upenn.edu/~sweirich/icfp-plmw15/}
+    %%        {Programming     Languages Mentoring Workshop} at the\\
+    %%        20th ACM SIGPLAN
+    %%        {\bf \href{http://icfpconference.org/icfp2015/}{ICFP 2015}}
+    %%        %% International Conference on Functional Programming, 
+    %%        Vancouver, BC; 31 Aug--2 Sep, 2015.
+    %% \item 
+    %%   Scolarship to atten the
+    %%   {\bf \href{http://conf.researchr.org/home/PLMW-2016}{POPL/PLMW 2016}}
+    %%   Florida; 19 Jan--22 Jan, 2016.
+    %% \end{itemize}
+
+    Northeastern University Ph.D. Graduate Fellowship\hfill Boston, 2017--2018\\[\mymedskip]
+    Scholarships to attend
+    \href{https://www.cs.uoregon.edu/research/summerschool/summer17}
+    {Oregon Programming Languages Summer Schools} \hfill %% ; 20 June--2 July, 
+    Eugene, 2016, 2017\\[\mymedskip]
+%     Scholarship to attend
+%     \href{https://www.cs.uoregon.edu/research/summerschool/summer16}
+%          {Oregon Programming Languages Summer School} \hfill %% ; 20 June--2 July, 
+%     Eugene, 2016\\[\mymedskip]
+    Scholarship to attend 
+     \href{http://conf.researchr.org/home/PLMW-2016}{POPL
+        Programming Languages Mentoring Workshop} \hfill St.~Petersburg, 2016\\[\mymedskip]
+            Scholarship to attend
+           \href{http://icfpconference.org/icfp2015/}{ICFP}
+           \href{https://www.cis.upenn.edu/~sweirich/icfp-plmw15/}
+                {Programming Languages Mentoring Workshop}
+                %% at the\\    20th ACM SIGPLAN
+         %% International Conference on Functional Programming, 
+\hfill         Vancouver, %% , BC; 31 Aug--2 Sep, 
+2015
+
+\section{\mysidestyle Research} 
+\textit{\href{https://github.com/hyeyoungshin/popl19src/blob/master/popl19src.pdf}{A fully abstract compilation from
+    a total to a partial language.}} % \href{https://github.com/hyeyoungshin/popl19src}{popl19src} 
+    H.~Shin %(2018)
+    (submitted to {\small POPL}'19SRC) %%(TODO: add outcomes, contributions
+   
+    \section{\mysidestyle Leadership} 
+     Organizer of \emph{PL Jr. Study \& Research Group}, Northeastern University \hfill 2018-2019
+
+    \newpage
+    %%\section{\mysidestyle Talks}
+    %% \vspace{-3mm}
+    %%  \href{https://github.com/hyeyoungshin/Talks/raw/master/HTT/htt-slides.pdf}
+    %%       {Hoare Type Theory}, July 2016.
+
+
+    %%\begin{center}
+    %%RELEVANT COURSEWORK
+    %%\end{center}
+    %%______________________________________________________________________________________
+    %%\section{\mysidestyle Computer Science}
+    %%\begin{itemize}
+%%    \item Graduate Programming Languages ({\small COMS} 542; grade: A)
+%%    \item Graduate Theory of Computing ({\small COMS} 531; grade: A)
+%%    \item Graduate Formal Methods ({\small COMS} 512; grade: A)
+%%    \item Undergraduate Theory of Computing ({\small COMS} 331; grade: A-)
+%%    \item Discrete Computational Structures ({\small COMS 330}; grade: A)
+%%    \item Algorithms ({\small COMS} 311; grade: A)
+%%    \item Data Structures ({\small COMS} 228; grade: A)
+%%    \item Object-oriented Programming ({\small COMS} 227; grade: A)
+%%    \end{itemize}
+
+%%    %______________________________________________________________________________________
+%%    \section{\mysidestyle Mathematics}
+%%    \begin{itemize}
+%%    \item Graduate Logic ({\small MATH} 654; grade: tbd)
+%%    \item Topology ({\small MATH} 421; grade: tbd)
+%%    \item Abstract Algebra ({\small MATH} 301; grade: A)
+%%    \item Introduction to Proofs ({\small MATH} 201; grade: A)
+%%    \item Calculus I, II ({\small MATH} 165, 166; grades: A, A)
+    %% \item Calculus 2 ({\small MATH} 166; grade: A)
+    %% \item Calculus 1 ({\small MATH} 165; grade: A)
+%%    \end{itemize}
+
+
+
+\end{resume}
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
